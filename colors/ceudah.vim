@@ -48,7 +48,7 @@ endfun
 
 " Vim Editor
 call s:HL('ColorColumn',                    '',         s:gray3,    '')
-call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
+call s:HL('Cursor',                         s:gray2,    s:gray4,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
 call s:HL('CursorLine',                     '',         s:gray2,    'none')
 call s:HL('CursorLineNr',                   s:cyan,     s:gray2,    'none')
