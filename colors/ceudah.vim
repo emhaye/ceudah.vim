@@ -62,7 +62,7 @@ call s:HL('FoldColumn',                     s:gray4,    s:gray1,    '')
 call s:HL('Folded',                         s:gray3,    s:gray1,    '')
 call s:HL('IncSearch',                      s:yellow,   '',         '')
 call s:HL('LineNr',                         s:gray4,    s:gray2,    '')
-call s:HL('MatchParen',                     s:gray4,    s:cyan,     'bold')
+call s:HL('MatchParen',                     s:cyan,     s:cyan,     'bold')
 call s:HL('ModeMsg',                        s:green,    '',         '')
 call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
@@ -87,6 +87,7 @@ call s:HL('VertSplit',                      s:gray4,    s:gray1,    'none')
 call s:HL('Visual',                         '',    s:gray3,    '')
 call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
+hi MatchParen   guibg=NONE
 
 " Standard Syntax
 call s:HL('Comment',                        s:gray4,    '',         'italic')
