@@ -3,7 +3,7 @@ A 24-bit Vim color scheme based on Google's [Material Design palette](https://ma
 Vim style based on [Quantum](https://github.com/tyrannicaltoucan/vim-quantum)
 
 ##### Ceudah
-![ceudah](https://i.imgur.com/kD9CWLn.png)
+![ceudah](https://i.imgur.com/RS2JPZf.png)
 
 ### Installation
 **NOTE:** This color scheme requires a terminal that supports true colors!
