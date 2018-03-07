@@ -240,8 +240,8 @@ call s:HL('rubyRegexp',                     s:cyan,     '',         'italic')
 call s:HL('rubyRegexpDelimiter',            s:indigo,   '',         'italic')
 call s:HL('rubySharpBang',                  s:indigo,   '',         '')
 call s:HL('rubyStringDelimiter',            s:green,    '',         'italic')
+call s:HL('rubySymbol',                     s:orange,   '',         'italic')
 call s:HL('rubyTodo',                       s:gray4,    '',         'Bold')
-call s:HL('rubySymbol',                     s:red,      '',         'italic')
 
 " Sass
 call s:HL('sassAmpersand',                  s:red,      '',         '')
