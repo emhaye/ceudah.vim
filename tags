@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HL	colors/ceudah.vim	/^function! s:HL(group, fg, bg, attr)$/;"	f
+g:ceudah_black	colors/ceudah.vim	/^let g:ceudah_black = get(g:, 'ceudah_black', 1)$/;"	v
+g:colors_name	colors/ceudah.vim	/^let g:colors_name = 'ceudah'$/;"	v
+g:enable_ceudah_italics	colors/ceudah.vim	/^let g:enable_ceudah_italics = get(g:, 'ceudah_italics', 1)$/;"	v
+g:terminal_color_0	colors/ceudah.vim	/^    let g:terminal_color_0 = s:gray1$/;"	v
+g:terminal_color_1	colors/ceudah.vim	/^    let g:terminal_color_1 = s:red$/;"	v
+g:terminal_color_10	colors/ceudah.vim	/^    let g:terminal_color_10 = s:green$/;"	v
+g:terminal_color_11	colors/ceudah.vim	/^    let g:terminal_color_11 = s:yellow$/;"	v
+g:terminal_color_12	colors/ceudah.vim	/^    let g:terminal_color_12 = s:blue$/;"	v
+g:terminal_color_13	colors/ceudah.vim	/^    let g:terminal_color_13 = s:purple$/;"	v
+g:terminal_color_14	colors/ceudah.vim	/^    let g:terminal_color_14 = s:cyan$/;"	v
+g:terminal_color_15	colors/ceudah.vim	/^    let g:terminal_color_15 = s:gray4$/;"	v
+g:terminal_color_2	colors/ceudah.vim	/^    let g:terminal_color_2 = s:green$/;"	v
+g:terminal_color_3	colors/ceudah.vim	/^    let g:terminal_color_3 = s:yellow$/;"	v
+g:terminal_color_4	colors/ceudah.vim	/^    let g:terminal_color_4 = s:blue$/;"	v
+g:terminal_color_5	colors/ceudah.vim	/^    let g:terminal_color_5 = s:purple$/;"	v
+g:terminal_color_6	colors/ceudah.vim	/^    let g:terminal_color_6 = s:cyan$/;"	v
+g:terminal_color_7	colors/ceudah.vim	/^    let g:terminal_color_7 = s:gray5$/;"	v
+g:terminal_color_8	colors/ceudah.vim	/^    let g:terminal_color_8 = s:gray3$/;"	v
+g:terminal_color_9	colors/ceudah.vim	/^    let g:terminal_color_9 = s:red$/;"	v
+g:terminal_color_background	colors/ceudah.vim	/^    let g:terminal_color_background = g:terminal_color_0$/;"	v
+g:terminal_color_foreground	colors/ceudah.vim	/^    let g:terminal_color_foreground = g:terminal_color_7$/;"	v
+s:blue	colors/ceudah.vim	/^let s:blue      = '#0198D8'$/;"	v
+s:cyan	colors/ceudah.vim	/^let s:cyan      = '#00bcd4'$/;"	v
+s:gray1	colors/ceudah.vim	/^let s:gray1     = g:ceudah_black ? '#090300' : '#1D1F21'$/;"	v
+s:gray2	colors/ceudah.vim	/^let s:gray2     = g:ceudah_black ? '#292929' : '#2c3a41'$/;"	v
+s:gray3	colors/ceudah.vim	/^let s:gray3     = g:ceudah_black ? '#474646' : '#425762'$/;"	v
+s:gray4	colors/ceudah.vim	/^let s:gray4     = g:ceudah_black ? '#6a6c6c' : '#658494'$/;"	v
+s:gray5	colors/ceudah.vim	/^let s:gray5     = g:ceudah_black ? '#b7bdc0' : '#aebbc5'$/;"	v
+s:green	colors/ceudah.vim	/^let s:green     = '#4caf50'$/;"	v
+s:indigo	colors/ceudah.vim	/^let s:indigo    = '#BF4D99'$/;"	v
+s:orange	colors/ceudah.vim	/^let s:orange    = '#F26213'$/;"	v
+s:purple	colors/ceudah.vim	/^let s:purple    = '#AA46BB'$/;"	v
+s:red	colors/ceudah.vim	/^let s:red       = '#f44336'$/;"	v
+s:yellow	colors/ceudah.vim	/^let s:yellow    = '#ff9800'$/;"	v
