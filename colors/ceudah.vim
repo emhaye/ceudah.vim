@@ -120,6 +120,7 @@ call s:HL('Symbol',                         s:red,      '',         'italic')
 call s:HL('Todo',                           s:gray1,    '',         'bold')
 call s:HL('Type',                           s:yellow,   '',         'italic')
 call s:HL('Underlined',                     s:blue,     '',         'none')
+call s:HL('Variable',                       s:cyan,     '',         'italic')
 
 " CSS
 call s:HL('cssAttrComma',                   s:gray5,    '',         '')
