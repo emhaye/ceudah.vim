@@ -222,13 +222,10 @@ call s:HL('markdownUrlTitleDelimiter',      s:green,    '',         '')
 
 " Ruby
 call s:HL('rubyAttribute',                  s:cyan,     '',         'italic')
-"call s:HL('rubyBeginEnd',                   s:gray4,    '',         'italic')
 call s:HL('rubyBlockParameter',             s:orange,   '',         'italic')
 call s:HL('rubyClass',                      s:purple,   '',         '')
 call s:HL('rubyClassName',                  s:red,      '',         'italic')
 call s:HL('rubyClassVariable',              s:cyan,     '',         'italic')
-call s:HL('rubyConditional',                s:indigo,   '',         '')
-call s:HL('rubyConditionalExpression',      s:yellow,   '',         '')
 call s:HL('rubyConstant',                   s:yellow,   '',         'italic')
 call s:HL('rubyControl',                    s:blue,     '',         '')
 call s:HL('rubyCurlyBlockDelimiter',        s:gray5,    'Bold',     'Bold')
