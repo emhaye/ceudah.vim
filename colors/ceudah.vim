@@ -157,11 +157,12 @@ hi link gitcommitSelectedArrow  gitcommitSelectedFile
 hi link gitcommitUnmergedArrow  gitcommitUnmergedFile
 
 " HTML
-call s:HL('htmlEndTag',                     s:blue,     '',         '')
+call s:HL('htmlArg',                        s:cyan,     '',         '')
+call s:HL('htmlEndTag',                     s:purple,   '',         '')
 call s:HL('htmlLink',                       s:red,      '',         '')
-call s:HL('htmlTag',                        s:blue,     '',         '')
+call s:HL('htmlTag',                        s:purple,   '',         '')
 call s:HL('htmlTitle',                      s:gray5,    '',         '')
-call s:HL('htmlSpecialTagName',             s:purple,   '',         '')
+call s:HL('htmlSpecialTagName',             s:indigo,   '',         '')
 
 " Javascript
 call s:HL('javaScriptBraces',               s:gray5,    '',         '')
@@ -221,6 +222,9 @@ call s:HL('markdownUrl',                    s:purple,   '',         '')
 call s:HL('markdownUrlTitleDelimiter',      s:green,    '',         '')
 
 " Ruby
+call s:HL('erubyDelimeter',                 s:gray1,    '',         '')
+call s:HL('rspecGroupMethods',              s:blue,     '',         '')
+call s:HL('rubyAccess',                     s:orange,   '',         'italic')
 call s:HL('rubyAttribute',                  s:cyan,     '',         'italic')
 call s:HL('rubyBlockParameter',             s:orange,   '',         'italic')
 call s:HL('rubyClass',                      s:purple,   '',         '')
@@ -239,11 +243,13 @@ call s:HL('rubyInteger',                    s:red,      '',         '')
 call s:HL('rubyInterpolation',              s:cyan,     '',         '')
 call s:HL('rubyInterpolationDelimiter',     s:indigo,   '',         '')
 call s:HL('rubyLocalVariableOrMethod',      s:red,      '',         '')
-call s:HL('rubyModuleName',                 s:cyan,     '',         'italic')
+call s:HL('rubyModule',                     s:blue,     '',         '')
+call s:HL('rubyModuleName',                 s:indigo,   '',         'italic')
 call s:HL('rubyPredefinedConstant',         s:orange,   '',         '')
 call s:HL('rubyPseudoVariable',             s:blue,     '',         '')
 call s:HL('rubyRegexp',                     s:cyan,     '',         'italic')
 call s:HL('rubyRegexpDelimiter',            s:indigo,   '',         'italic')
+call s:HL('rubyRoute',                      s:cyan,     '',         '')
 call s:HL('rubySharpBang',                  s:indigo,   '',         '')
 call s:HL('rubyStringDelimiter',            s:green,    '',         'italic')
 call s:HL('rubySymbol',                     s:orange,   '',         'italic')
