@@ -15,11 +15,13 @@ let g:enable_ceudah_italics = get(g:, 'ceudah_italics', 1)
 let g:ceudah_black = get(g:, 'ceudah_black', 1)
 
 " Color Palette
-let s:gray1     = g:ceudah_black ? '#090300' : '#1D1F21'
-let s:gray2     = g:ceudah_black ? '#292929' : '#2c3a41'
-let s:gray3     = g:ceudah_black ? '#474646' : '#425762'
-let s:gray4     = g:ceudah_black ? '#6a6c6c' : '#658494'
-let s:gray5     = g:ceudah_black ? '#b7bdc0' : '#aebbc5'
+let s:black     = '#181A1F'
+let s:gray1     = '#282828'
+let s:gray2     = '#3C3836'
+let s:gray3     = '#474646'
+let s:gray4     = '#6a6c6c'
+let s:gray5     = '#b7bdc0'
+let s:gray6     = '#504945'
 let s:red       = '#f44336'
 let s:green     = '#4caf50'
 let s:yellow    = '#ff9800'
@@ -47,9 +49,14 @@ function! s:HL(group, fg, bg, attr)
 endfun
 
 " Vim Editor
-call s:HL('ColorColumn',                    '',         s:gray3,    '')
+call s:HL('ALEErrorSign',                   s:red,      s:gray6,    '')
+call s:HL('ALEStyleErrorSign',              s:red,      s:gray6,    '')
+call s:HL('ALEWarningSign',                 s:yellow,   s:gray6,    '')
+call s:HL('ALEStyleWarningSign',            s:yellow,   s:gray6,    '')
+call s:HL('ALEInfoSign',                    s:cyan,     s:gray6,    '')
+call s:HL('ColorColumn',                    '',         s:gray2,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray4,    '')
-call s:HL('CursorColumn',                   '',         s:gray2,    '')
+call s:HL('CursorColumn',                   '',         s:gray2,    'none')
 call s:HL('CursorLine',                     '',         s:gray2,    'none')
 call s:HL('CursorLineNr',                   s:cyan,     s:gray2,    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
@@ -73,7 +80,7 @@ call s:HL('PmenuSel',                       s:gray2,    s:cyan,     '')
 call s:HL('PmenuThumb',                     '',         s:gray4,    '')
 call s:HL('Question',                       s:blue,     '',         'none')
 call s:HL('Search',                         s:gray1,    s:yellow,   '')
-call s:HL('SignColumn',                     s:gray5,    s:gray1,    '')
+call s:HL('SignColumn',                     '',         s:gray6,    '')
 call s:HL('SpecialKey',                     s:gray4,    '',         '')
 call s:HL('SpellCap',                       s:blue,     s:gray2,    'undercurl')
 call s:HL('SpellBad',                       s:red,      s:gray2,    'undercurl')
@@ -83,34 +90,47 @@ call s:HL('TabLine',                        s:gray4,    s:gray2,    'none')
 call s:HL('TabLineFill',                    s:gray4,    s:gray2,    'none')
 call s:HL('TabLineSel',                     s:yellow,   s:gray3,    'none')
 call s:HL('Title',                          s:green,    '',         'none')
-call s:HL('VertSplit',                      s:gray4,    s:gray1,    'none')
+call s:HL('VertSplit',                      s:black,    '',    'none')
 call s:HL('Visual',                         '',    s:gray3,    '')
 call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
 hi  MatchParen      guibg=NONE
 hi  Cursor          gui=reverse         guibg=NONE      guifg=NONE
-hi  Normal          ctermbg=NONE        guibg=NONE
-hi  NonText         ctermbg=NONE        guibg=NONE
+"hi  Normal          ctermbg=NONE        guibg=NONE
+"hi  NonText         ctermbg=NONE        guibg=NONE
 
 " Standard Syntax
+call s:HL('Boolean',                        s:yellow,   '',         'italic')
+call s:HL('Character',                      s:green,    '',         'italic')
+call s:HL('Class',                          s:purple,   '',         '')
 call s:HL('Comment',                        s:gray4,    '',         'italic')
+call s:HL('Conditional',                    s:indigo,   '',         '')
 call s:HL('Constant',                       s:orange,   '',         '')
-call s:HL('String',                         s:green,    '',         '')
-call s:HL('Character',                      s:green,    '',         '')
-call s:HL('Identifier',                     s:red,      '',         'none')
+call s:HL('Define',                         s:purple,   '',         'none')
+call s:HL('Delimeter',                      s:purple,   '',         '')
+call s:HL('Error',                          s:red,      s:gray1,    'bold')
+call s:HL('Exception',                      s:red,      '',         'italic')
+call s:HL('Float',                          s:red,      '',         '')
 call s:HL('Function',                       s:blue,     '',         '')
-call s:HL('Statement',                      s:purple,   '',         'none')
+call s:HL('Identifier',                     s:red,      '',         'none')
+call s:HL('Ignore',                         s:yellow,   '',         '')
+call s:HL('Include',                        s:blue,     '',         '')
+call s:HL('Keyword',                        s:cyan,     '',         '')
+call s:HL('Label',                          s:indigo,   '',         '')
+call s:HL('Macro',                          s:purple,   '',         '')
+call s:HL('Number',                         s:red,      '',         '')
 call s:HL('Operator',                       s:cyan,     '',         '')
 call s:HL('PreProc',                        s:cyan,     '',         '')
-call s:HL('Include',                        s:blue,     '',         '')
-call s:HL('Define',                         s:purple,   '',         'none')
-call s:HL('Macro',                          s:purple,   '',         '')
-call s:HL('Type',                           s:yellow,   '',         'none')
-call s:HL('Structure',                      s:cyan,     '',         '')
+call s:HL('PreCondit',                      s:cyan,     '',         '')
+call s:HL('Repeat',                         s:indigo,   '',         '')
 call s:HL('Special',                        s:indigo,   '',         '')
+call s:HL('Statement',                      s:cyan,     '',         'none')
+call s:HL('String',                         s:green,    '',         '')
+call s:HL('Structure',                      s:cyan,     '',         '')
+call s:HL('Symbol',                         s:red,      '',         'italic')
+call s:HL('Todo',                           s:gray1,    '',         'bold')
+call s:HL('Type',                           s:yellow,   '',         'italic')
 call s:HL('Underlined',                     s:blue,     '',         'none')
-call s:HL('Error',                          s:red,      s:gray1,    'bold')
-call s:HL('Todo',                           s:orange,   s:gray1,    'bold')
 
 " CSS
 call s:HL('cssAttrComma',                   s:gray5,    '',         '')
@@ -145,11 +165,14 @@ hi link gitcommitSelectedArrow  gitcommitSelectedFile
 hi link gitcommitUnmergedArrow  gitcommitUnmergedFile
 
 " HTML
-call s:HL('htmlEndTag',                     s:blue,     '',         '')
+call s:HL('htmlArg',                        s:cyan,     '',         '')
+call s:HL('htmlEndTag',                     s:purple,   '',         '')
 call s:HL('htmlLink',                       s:red,      '',         '')
-call s:HL('htmlTag',                        s:blue,     '',         '')
+call s:HL('htmlTag',                        s:indigo,   '',         '')
+call s:HL('htmlTagN',                       s:purple,   '',         '')
+call s:HL('htmlTagName',                    s:purple,   '',         '')
 call s:HL('htmlTitle',                      s:gray5,    '',         '')
-call s:HL('htmlSpecialTagName',             s:purple,   '',         '')
+call s:HL('htmlSpecialTagName',             s:indigo,   '',         '')
 
 " Javascript
 call s:HL('javaScriptBraces',               s:gray5,    '',         '')
@@ -209,11 +232,43 @@ call s:HL('markdownUrl',                    s:purple,   '',         '')
 call s:HL('markdownUrlTitleDelimiter',      s:green,    '',         '')
 
 " Ruby
+call s:HL('erubyDelimeter',                 s:indigo,   '',         '')
+call s:HL('rspecGroupMethods',              s:blue,     '',         '')
+call s:HL('rubyAccess',                     s:cyan,     '',         'italic')
+call s:HL('rubyAttribute',                  s:cyan,     '',         'italic')
+call s:HL('rubyBlockParameter',             s:orange,   '',         'italic')
+call s:HL('rubyCallback',                   s:cyan,     '',         '')
+call s:HL('rubyClass',                      s:purple,   '',         '')
+call s:HL('rubyClassName',                  s:red,      '',         'italic')
+call s:HL('rubyClassVariable',              s:red,      '',         '')
+call s:HL('rubyConstant',                   s:yellow,   '',         '')
+call s:HL('rubyControl',                    s:blue,     '',         '')
+call s:HL('rubyCurlyBlockDelimiter',        s:gray5,    'Bold',     'Bold')
+call s:HL('rubyData',                       s:gray1,    '',         '')
+call s:HL('rubyDataDirective',              s:gray1,    '',         '')
+call s:HL('rubyEval',                       s:indigo,   '',         '')
+call s:HL('rubyFunction',                   s:blue,     '',         'italic')
+call s:HL('rubyGlobalVariable',             s:red,      '',         '')
+call s:HL('rubyInclude',                    s:red,      '',         '')
+call s:HL('rubyIdentifier',                 s:cyan,     'Bold',     'Bold')
+call s:HL('rubyInstanceVariable',           s:red,      '',         '')
+call s:HL('rubyInteger',                    s:red,      '',         '')
 call s:HL('rubyInterpolation',              s:cyan,     '',         '')
 call s:HL('rubyInterpolationDelimiter',     s:indigo,   '',         '')
-call s:HL('rubyRegexp',                     s:cyan,     '',         '')
-call s:HL('rubyRegexpDelimiter',            s:indigo,   '',         '')
+call s:HL('rubyKeyword',                    s:indigo,   '',         'italic')
+call s:HL('rubyLocalVariableOrMethod',      s:red,      '',         '')
+call s:HL('rubyModule',                     s:blue,     '',         '')
+call s:HL('rubyModuleName',                 s:indigo,   '',         'italic')
+call s:HL('rubyPredefinedConstant',         s:orange,   '',         '')
+call s:HL('rubyPseudoVariable',             s:orange,   '',         'italic')
+call s:HL('rubyRegexp',                     s:cyan,     '',         'italic')
+call s:HL('rubyRegexpDelimiter',            s:indigo,   '',         'italic')
+call s:HL('rubyRoute',                      s:cyan,     '',         '')
+call s:HL('rubySharpBang',                  s:indigo,   '',         '')
 call s:HL('rubyStringDelimiter',            s:green,    '',         '')
+call s:HL('rubySymbol',                     s:orange,   '',         'italic')
+call s:HL('rubySymbolDelimiter',            s:purple,   '',         'italic')
+call s:HL('rubyTodo',                       s:gray4,    '',         'Bold')
 
 " Sass
 call s:HL('sassAmpersand',                  s:red,      '',         '')
