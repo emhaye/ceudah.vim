@@ -15,6 +15,7 @@ let g:enable_ceudah_italics = get(g:, 'ceudah_italics', 1)
 let g:ceudah_black = get(g:, 'ceudah_black', 1)
 
 " Color Palette
+let s:wheat     = '#a4805c'
 let s:black     = '#181A1F'
 let s:gray1     = '#282828'
 let s:gray2     = '#3C3836'
@@ -58,7 +59,7 @@ call s:HL('ColorColumn',                    '',         s:gray2,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray4,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    'none')
 call s:HL('CursorLine',                     '',         s:gray2,    'none')
-call s:HL('CursorLineNr',                   s:cyan,     s:gray2,    'none')
+call s:HL('CursorLineNr',                   s:wheat,    s:gray2,    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
 call s:HL('DiffChange',                     s:yellow,   s:gray2,    'none')
