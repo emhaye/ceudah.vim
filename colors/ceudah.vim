@@ -278,14 +278,14 @@ call s:HL('sassMixinName',                  s:blue,     '',         '')
 call s:HL('sassVariable',                   s:purple,   '',         '')
 
 " Vim-Fugitive
-call s:HL('diffAdded',                      s:green,    '',         '')
-call s:HL('diffRemoved',                    s:red,      '',         '')
+call s:HL('diffAdded',                      s:green,    s:gray6,    '')
+call s:HL('diffRemoved',                    s:red,      s:gray6,    '')
 
 " Vim-Gittgutter
-call s:HL('GitGutterAdd',                   s:green,    '',         '')
-call s:HL('GitGutterChange',                s:yellow,   '',         '')
-call s:HL('GitGutterChangeDelete',          s:orange,   '',         '')
-call s:HL('GitGutterDelete',                s:red,      '',         '')
+call s:HL('GitGutterAdd',                   s:green,    s:gray6,    '')
+call s:HL('GitGutterChange',                s:yellow,   s:gray6,    '')
+call s:HL('GitGutterChangeDelete',          s:orange,   s:gray6,    '')
+call s:HL('GitGutterDelete',                s:red,      s:gray6,    '')
 
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
